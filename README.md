@@ -1,2 +1,2 @@
 # RecordWithSpeex
-Source demo for speex usage.
+Source demo for speex usage on Android.
