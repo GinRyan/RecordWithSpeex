@@ -1,6 +1,7 @@
 #Android generated
 bin
 gen
+.project.properties
 
 #Eclipse
 .project
@@ -28,3 +29,6 @@ proguard.cfg
 
 #OSX
 .DS_Store
+
+#C object files.
+obj
