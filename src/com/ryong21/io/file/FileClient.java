@@ -104,7 +104,7 @@ public class FileClient implements Constants {
 		this.sampleRate = sampleRate;
 	}
 
-	public void setChannle(int channle) {
+	public void setChannel(int channle) {
 		this.channle = channle;
 	}
 }
