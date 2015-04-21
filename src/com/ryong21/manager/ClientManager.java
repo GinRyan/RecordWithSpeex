@@ -3,11 +3,14 @@ package com.ryong21.manager;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
+
 import com.ryong21.io.Consumer;
 import com.ryong21.io.PcmRecorder;
 import com.ryong21.io.file.FileClient;
