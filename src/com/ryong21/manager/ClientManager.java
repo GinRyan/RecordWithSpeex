@@ -178,13 +178,13 @@ public class ClientManager implements Runnable, Consumer, PlayStatusListener {
 		netClient.setHost("192.168.1.102");
 		netClient.setPort(1935);
 		netClient.setApp("live");
-		netClient.setChannle(1);
+		netClient.setChannel(1);
 		netClient.setSampleRate(8000);
 		netClient.setConsumer(this);
 	}
 
 	private void fileClientInit() {
-		fileClient.setChannle(1);
+		fileClient.setChannel(1);
 		fileClient.setSampleRate(8000);
 	}
 
