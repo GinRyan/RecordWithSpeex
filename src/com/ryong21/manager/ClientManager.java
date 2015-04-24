@@ -3,11 +3,14 @@ package com.ryong21.manager;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
+
 import com.ryong21.io.Consumer;
 import com.ryong21.io.PcmRecorder;
 import com.ryong21.io.file.FileClient;
@@ -175,10 +178,10 @@ public class ClientManager implements Runnable, Consumer, PlayStatusListener {
 	}
 	
 	private void netClientInit() {
-		netClient.setHost("192.168.137.1");
+		netClient.setHost("192.168.1.102");
 		netClient.setPort(1935);
 		netClient.setApp("live");
-		netClient.setChannle(1);
+		netClient.setChannel(1);
 		netClient.setSampleRate(8000);
 		netClient.setConsumer(this);
 	}

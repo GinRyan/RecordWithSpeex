@@ -24,7 +24,7 @@ public class FileClient implements Constants {
 	private int currentTime = 0;
 	private long timeBase = 0;
 	private int sampleRate = 0;
-	private int channle;
+	private int channel;
 
 	public FileClient() {
 
@@ -82,7 +82,7 @@ public class FileClient implements Constants {
 			tagType |= IoConstants.FLAG_RATE_5_5_KHZ << 2;
 		}
 
-		tagType |= (channle == 2 ? IoConstants.FLAG_TYPE_STEREO
+		tagType |= (channel == 2 ? IoConstants.FLAG_TYPE_STEREO
 				: IoConstants.FLAG_TYPE_MONO);
 
 		IoBuffer body = IoBuffer.allocate(tag.getBodySize());
@@ -104,7 +104,7 @@ public class FileClient implements Constants {
 		this.sampleRate = sampleRate;
 	}
 
-	public void setChannel(int channle) {
-		this.channle = channle;
+	public void setChannel(int channel) {
+		this.channel = channel;
 	}
 }
