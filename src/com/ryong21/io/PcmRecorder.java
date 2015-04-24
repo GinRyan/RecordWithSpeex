@@ -44,7 +44,7 @@ public class PcmRecorder implements Runnable {
 		while (this.isRunning) {
 
 			//bufferRead = recordInstance.read(tempBuffer, 0, bufferSize);
-			bufferRead = recordInstance.read(tempBuffer, 0, 640);
+			bufferRead = recordInstance.read(tempBuffer, 0, bufferSize);
 			if (bufferRead == AudioRecord.ERROR_INVALID_OPERATION) {
 				throw new IllegalStateException(
 						"read() returned AudioRecord.ERROR_INVALID_OPERATION");
