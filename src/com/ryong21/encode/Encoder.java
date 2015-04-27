@@ -42,7 +42,7 @@ public class Encoder implements Runnable {
 			}
 			synchronized (mutex) {
 				short[] temp = new short[frameSize];
-				for (int i = 0; i < 4; i++) {
+				for (int i = 0; i < temp.length; i++) {
 					System.arraycopy(rawdata, i * frameSize, temp, 0, frameSize);
 					getSize = speex.encode(temp, 0, processedData, frameSize);
 //					log.error("encoded size {}", getSize);
